@@ -28,6 +28,7 @@
   letter-spacing: 0%;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 .btn-margin {
   margin-left: 15px;
@@ -186,4 +187,60 @@ nav ul li:last-child > a {
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 30px;
+}
+
+/* what i do */
+.what-i-do .whatido-content p {
+  width: 909px;
+  height: 90px;
+}
+.what-i-do {
+  margin: 130px 230px 130px 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.what-i-do .whatido-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.what-i-do .whatido-details .javascript,
+.react,
+.nodejs,
+.mongodb {
+  width: 277px;
+  height: 377px;
+  padding: 30px;
+}
+
+.what-i-do .whatido-details .javascript p,
+.what-i-do .whatido-details .react p,
+.what-i-do .whatido-details .nodejs p,
+.what-i-do .whatido-details .mongodb p {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.what-i-do .whatido-details .javascript h3,
+.what-i-do .whatido-details .react h3,
+.what-i-do .whatido-details .nodejs h3,
+.what-i-do .whatido-details .mongodb h3 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
 }

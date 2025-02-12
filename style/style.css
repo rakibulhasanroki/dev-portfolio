@@ -195,7 +195,7 @@ nav ul li:last-child > a {
   height: 90px;
 }
 .what-i-do {
-  margin: 130px 230px 130px 230px;
+  margin: 130px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,4 +243,158 @@ nav ul li:last-child > a {
   letter-spacing: 0%;
   text-align: left;
   margin-top: 30px;
+}
+
+/* summary section */
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.summary .summary-details {
+  display: flex;
+  gap: 71px;
+}
+.summary .summary-details .education-details,
+.experience-details {
+  width: 511px;
+  height: 175px;
+  margin-bottom: 60px;
+}
+.summary .summary-details .education .education-title {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.summary .summary-details .experience .experience-title {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.summary .summary-details .education-details h4,
+.experience-details h4 {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.summary .summary-details .education-details p,
+.experience-details p {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.summary .summary-details .education-details p:last-child,
+.experience-details p:last-child {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.summary button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  margin: 130px 0 130px 0;
+}
+
+.contact .contact-social h1 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.contact .contact-social p {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 562px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.contact .contact-social .icons img {
+  border: 1px dotted gray;
+  margin-right: 30px;
+}
+.contact .send-mail h2 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.contact .send-mail form input {
+  display: block;
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  outline: none;
+  width: 461px;
+  height: 56px;
+  padding: 0px 0 0 10px;
+  border-radius: 5px;
+  margin: 24px 0;
+  background: rgb(255, 255, 255);
+}
+.contact .send-mail form textarea {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 461px;
+  height: 180px;
+  outline: none;
+  padding: 10px 0 0 10px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  background: rgb(255, 255, 255);
 }

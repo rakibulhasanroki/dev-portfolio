@@ -36,7 +36,7 @@
 /* header */
 header {
   height: 837px;
-  background-image: url(images/developer.png), url(images/header_bg.png);
+  background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-position: left center, right bottom;
   background-repeat: no-repeat, no-repeat;
   margin: 0 0px 0 23px;

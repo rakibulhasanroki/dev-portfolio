@@ -39,7 +39,6 @@ header {
   background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-position: left center, right bottom;
   background-repeat: no-repeat, no-repeat;
-  margin: 0 0px 0 23px;
 }
 /* navbar */
 nav {
@@ -95,10 +94,11 @@ nav ul li:last-child > a {
   align-items: center;
   margin: 50px 38px 0 230px;
 }
-.header-content img {
+.header-content .header-image {
   max-width: 584px;
   max-height: 676px;
 }
+
 .header-content .banner button {
   padding: 18px 20px;
   margin-right: 30px;
@@ -190,7 +190,26 @@ nav ul li:last-child > a {
 }
 
 /* what i do */
-.what-i-do .whatido-content p {
+
+.content-title {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.content-description {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 30px;
   width: 909px;
   height: 90px;
 }
@@ -251,6 +270,16 @@ nav ul li:last-child > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.summary-title {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 113px;
 }
 .summary .summary-details {
   display: flex;
@@ -320,6 +349,8 @@ nav ul li:last-child > a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
+/* footer */
 .contact {
   display: flex;
   justify-content: center;
@@ -397,4 +428,402 @@ nav ul li:last-child > a {
   border-radius: 5px;
   margin-bottom: 24px;
   background: rgb(255, 255, 255);
+}
+
+/* display-hide-temporary for responsiveness process */
+.hide {
+  display: none;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+  /* header */
+  header {
+    height: auto;
+    background-image: none;
+  }
+
+  nav {
+    margin: 0 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .header-content .header-image {
+    margin-top: 50px;
+  }
+  .header-content .header-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-content .banner button {
+    width: 100%;
+  }
+  .header-content .banner button:last-child {
+    padding: 16px 30px;
+    background: none;
+    border: 2px solid rgb(253, 110, 10);
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .header-content .banner .banner-greetings {
+    font-size: 40px;
+  }
+  .header-content .banner .banner-title {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  .header-content .banner {
+    width: 100%;
+  }
+
+  .header-content .banner .banner-descriptions {
+    width: 100%;
+  }
+
+  /* about */
+  .about {
+    margin: 80px 20px;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about .about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .about-title {
+    margin-bottom: 80px;
+  }
+
+  /* What do i do */
+  .whatido-content {
+    margin: 0 auto;
+  }
+  .what-i-do {
+    gap: 0px;
+    margin: 20px;
+  }
+  .content-title {
+    margin-bottom: 30px;
+  }
+  .content-description {
+    width: 100%;
+    height: auto;
+  }
+  .what-i-do .whatido-details {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  /* summary */
+
+  .summary .summary-details {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .summary .summary-details .education-details,
+  .experience-details {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .summary-title {
+    margin-bottom: 80px;
+  }
+  .summary {
+    padding: 20px;
+  }
+
+  /* footer */
+  .contact {
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px;
+  }
+
+  .contact .contact-social p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact .send-mail form input {
+    width: 100%;
+    height: auto;
+  }
+  .contact .send-mail form textarea {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* header */
+  header {
+    height: auto;
+    background-image: none;
+  }
+
+  nav {
+    margin: 0px 50px 0 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .header-content .header-image {
+    margin-top: 50px;
+  }
+  .header-content .header-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-content .banner button:last-child {
+    padding: 16px 30px;
+    background: none;
+    border: 2px solid rgb(253, 110, 10);
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .header-content .banner .banner-greetings {
+    font-size: 40px;
+  }
+  .header-content .banner .banner-title {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  .header-content .banner {
+    width: 100%;
+  }
+
+  .header-content .banner .banner-descriptions {
+    width: 100%;
+  }
+
+  /* about */
+  .about {
+    margin: 100px 50px;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about .about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .about-title {
+    margin-bottom: 80px;
+  }
+
+  /* what-i-do */
+  .content-title {
+    margin-bottom: 30px;
+  }
+  .content-description {
+    width: 100%;
+    height: auto;
+  }
+  .what-i-do {
+    margin: 100px 30px;
+    gap: 0px;
+  }
+  .what-i-do .whatido-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* Summary */
+  .summary {
+    margin: 0 30px;
+  }
+  .summary .summary-details {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
+  .summary .summary-details .education-details,
+  .experience-details {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  /* footer */
+  .contact {
+    justify-content: space-between;
+    gap: 50px;
+    margin: 100px 20px;
+  }
+  .contact .contact-social {
+    width: 40%;
+  }
+  .contact .contact-social p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contact .send-mail {
+    width: 60%;
+  }
+  .contact .send-mail form input {
+    width: 100%;
+    height: auto;
+  }
+  .contact .send-mail form textarea {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  /* header */
+  header {
+    height: auto;
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-position: left center, right bottom;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+  }
+  nav {
+    margin: 0px 100px 0 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+  .header-content .header-image {
+    margin-top: 50px;
+  }
+  .header-content .header-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-content .banner button:last-child {
+    padding: 16px 30px;
+    background: none;
+    border: 2px solid rgb(253, 110, 10);
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .header-content .banner .banner-greetings {
+    font-size: 40px;
+  }
+  .header-content .banner .banner-title {
+    font-size: 65px;
+    line-height: 100px;
+  }
+  .header-content .banner {
+    width: 100%;
+  }
+
+  .header-content .banner .banner-descriptions {
+    width: 100%;
+  }
+  /* what d i do */
+
+  .content-title {
+    margin-bottom: 80px;
+  }
+
+  .what-i-do .whatido-details .javascript,
+  .react,
+  .nodejs,
+  .mongodb {
+    width: 220px;
+    height: 377px;
+    padding: 20px;
+  }
+
+  /* summary */
+
+  .summary {
+    margin: 0 50px;
+  }
+  .summary .summary-details {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .summary .summary-details .education-details,
+  .experience-details {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  /* footer */
+  .contact {
+    gap: 50px;
+    margin: 100px 50px;
+  }
+  .contact .contact-social {
+    width: 40%;
+  }
+  .contact .contact-social p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contact .send-mail {
+    width: 60%;
+  }
+  .contact .send-mail form input {
+    width: 100%;
+    height: auto;
+  }
+  .contact .send-mail form textarea {
+    width: 100%;
+    height: auto;
+  }
 }
